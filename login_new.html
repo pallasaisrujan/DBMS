@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#email {
+    margin-left: 10pt;
+    margin-top: 40pt;
+    width: 330pt;
+    height: 20pt;
+}
+#password {
+    margin-left: 10pt;
+    margin-top: 15pt;
+    width: 330pt;
+    height: 20pt;
+}
+#login:hover{
+    background-color: lightgreen;
+    border-width: 2pt;
+}
+body {
+    background-image: url('bkgr.jpg');
+    background-size: 100%;
+}
+#div1 {
+    margin-left: 400pt;
+    margin-right: 400pt;
+    margin-top: 100pt;
+    width: 350pt;
+    height: 350pt;
+    border-style: solid;
+    border-color: black;
+    border-width: 2pt;
+}
+#login {
+    width: 330pt;
+    height: 20pt;
+    border-style: solid;
+    margin-top: 10pt;
+    margin-left: 10pt;
+    border-width: 1pt;
+    border-color: black;
+    border-radius: 5pt;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+#avatar {
+    padding-top: 50pt;
+    height: 100pt;
+    width: 100pt;
+    padding-left: 125pt;
+}
+#signup {
+    padding-left:125pt;
+}
+</style>
+<script src="smpl_js.js"></script>
+</head>
+<body>
+        <form action="login_php.php" method = "POST">
+        <div id="div1">
+                <img src="avatar.png" id="avatar">
+                <br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <br>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <br>
+                <br>
+                <button type="submit" id="login" onclick=redirect()>Login</button>
+                <br>
+                <br>
+                <a href="signup.html" id="signup">Not a user?Click Here</a>
+        </div> 
+        </form>
+    </body>
+</html>

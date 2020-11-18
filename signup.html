@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#user {
+    margin-left: 10pt;
+    margin-top: 15pt;
+    width: 330pt;
+    height: 20pt;
+}
+#email {
+    margin-left: 10pt;
+    margin-top: 15pt;
+    width: 330pt;
+    height: 20pt;
+}
+#password {
+    margin-left: 10pt;
+    margin-top: 15pt;
+    width: 330pt;
+    height: 20pt;
+}
+#cnf_pass {
+    margin-left: 10pt;
+    margin-top: 15pt;
+    width: 330pt;
+    height: 20pt;
+}
+#signup:hover{
+    background-color: lightgreen;
+    border-width: 2pt;
+}
+body {
+    background-image: url('bkgr.jpg');
+    background-size: 100%;
+}
+#div1 {
+    margin-left: 400pt;
+    margin-right: 400pt;
+    margin-top: 100pt;
+    width: 350pt;
+    height: 350pt;
+    border-style: solid;
+    border-color: black;
+    border-width: 2pt;
+}
+#signup {
+    width: 330pt;
+    height: 20pt;
+    border-style: solid;
+    margin-top: 10pt;
+    margin-left: 10pt;
+    border-width: 1pt;
+    border-color: black;
+    border-radius: 5pt;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+#avatar {
+    padding-top: 10pt;
+    height: 100pt;
+    width: 100pt;
+    padding-left: 125pt;
+}
+#login {
+    padding-left:98pt;
+}
+</style>
+</head>
+<body>
+        <form action="signup_php.php" method = "POST">
+        <div id="div1">
+                <img src="avatar.png" id="avatar">
+                <br>
+                <input type="user" id="user" name="user" required placeholder="Enter your username">
+                <br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <br>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <br>
+                <input type="password" id="cnf_pass" name="cnf_pass" required placeholder="Confirm Password">
+                <br>
+                <br>
+                <button type="submit" id="signup">Signup</button>
+                <br>
+                <br>
+                <a href="login_new.html" id="login">Already Registered?Click Here</a>
+        </div> 
+        </form>
+    </body>
+</html>
